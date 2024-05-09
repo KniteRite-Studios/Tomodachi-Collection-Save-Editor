@@ -1,0 +1,56 @@
+These are my Findings on how a Tomodachi Collection Save File Works.
+
+I created an island with the name "test" that has 3 Male generic mii islanders. All with maximum personality stats
+and the same voice. 
+
+Mii 1: test
+Mii 2: test1
+Mii 3: test2
+
+lines 0 through F0 appear to be Island Information. With the island name being saved on line 80. 
+
+Example:"TOMODACHI-FAIRY  q "3      ¬          ûÿÿÿÿÿÿÿ’%Î-                    ART         	¿"3                               t e s t                 ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ                              GÜ$" 
+Please keep in mind that all   symbols represent 00 in memory. 
+
+
+At line 800, The string "akstnhmyrwgzdbp" can be found. 
+
+At like 8F0, the string "YRG—" can be found.
+
+Each set of data for a Mii Character will always start with "MaaMiiMuuMeeMoo"
+
+At line 1000, Consisting until line 1300, the data for Mii 1 Can be found. 
+
+"MaaMiiMuuMeeMoo  t e s t             @@Ä q "3 @B€1¢(ŒXJ¸Š Š %t e s t              0…Œ   t e s t               t e s t                                                                                                                         d d k 1Z   dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd                                                                                                                                                                                         {)Î-     	        ÿÿÿÿÿÿÿ            ÿ              z  Ì   Ì                                  UUUU    _ÿÿÿ    ÿÿÿÿÿÿ   ÿ                                                                       X±G7"
+
+At line 1300, the data for Mii 2 Can be found, This looks nearly identical to Mii 1's Data, So an example isn't necessary.
+
+Same for line 1600.
+
+Every 300 lines from this point onwards until 13BF0 is the data for the next Mii Character, Which in this case, is blank.
+
+
+At line 13BF0, The string "‡x|×" is found
+
+
+The next section of data is Blank until line 3DBF0, Where the string "aadeeiKlLnnrrst" appears, Follwed by a pattern of "   ÿ  ÿ  ÿ  ÿ  ÿ" that continues until line 3DE60.
+
+At line 3DEF0, the string "Sm»tsumanogosakata" appears.
+
+At line 3F8F0, the string "Z6X¿N-EAST-WEST-S   ›       r B«a   Ÿ       ? BëB   ž       E  B| appears.
+
+At line 3F9F0, The string "-]‚469121518212630             M Ã µ y â B } 6  5    › ¿  I \             — Ú  *V 0 5 7 F f ‘ Ÿ µ ¾ Á .µ" appears.
+
+At line 3FAF0, the string "uW,123571113171923 ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ" appears. 
+
+Starting at line 3FBF0, A combination of FF and 00 Bytes appears, with 2 Strings also inserted. "?90hBusGasExplosion" and "¾8gÌKyotoOsakaNara"
+
+At line 40000, The string "TOMODACHI-FAIRY" appears again, This time with more island information, Including the island name. 
+
+"ƒTOMODACHI-FAIRY  q "3      ¬          ûÿÿÿÿÿÿÿª!Î-                    Œª£—         	¿"3                                 t e s t                 ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ                               ë³Œ¥"
+
+The rest of this section is Identical, With maybe some minor differences. 
+
+I am unsure what encryption method is used for this, However this information may be useful in creating a save editor in the future. 
+
+KniteRite.
