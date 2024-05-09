@@ -1,5 +1,5 @@
 These are my Findings on how a Tomodachi Collection Save File Works.
-
+If you are unable to view the question mark character, Please download the TXT and open it with Notepad.
 I created an island with the name "test" that has 3 Male generic mii islanders. All with maximum personality stats
 and the same voice. 
 
