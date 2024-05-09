@@ -1,5 +1,5 @@
 These are my Findings on how a Tomodachi Collection Save File Works.
-If you are unable to view the question mark character, Please download the TXT and open it with Notepad.
+Due to bugs with GitHub's text encoder, Some of the symbols will appear to be blank. There are no Spaces in the examples, The spaces will represent a 00 Byte in memory. 
 I created an island with the name "test" that has 3 Male generic mii islanders. All with maximum personality stats
 and the same voice. 
 
@@ -10,7 +10,7 @@ Mii 3: test2
 lines 0 through F0 appear to be Island Information. With the island name being saved on line 80. 
 
 Example:"TOMODACHI-FAIRY  q "3      ¬          ûÿÿÿÿÿÿÿ’%Î-                    ART         	¿"3                               t e s t                 ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ  ÿ                              GÜ$" 
-Please keep in mind that all   symbols represent 00 in memory. 
+
 
 
 At line 800, The string "akstnhmyrwgzdbp" can be found. 
