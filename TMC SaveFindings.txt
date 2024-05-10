@@ -1,5 +1,5 @@
 These are my Findings on how a Tomodachi Collection Save File Works.
-Due to bugs with GitHub's text encoder, Some of the symbols will appear to be blank. There are no Spaces in the examples, The spaces will represent a 00 Byte in memory. 
+Due to bugs with GitHub's text encoder, Some of the symbols will appear to be blank. There are no Spaces in the examples, The spaces will represent a 00 Byte in hexadecimal. 
 I created an island with the name "test" that has 3 Male generic mii islanders. All with maximum personality stats
 and the same voice. 
 
