@@ -3,7 +3,7 @@
 A work in progress tool to edit a Tomodachi Collection save file. 
 
 
-Mii2QR: An EXE File that will take a Mii Character from the .sav file and convert it into a Mii QR Code for 3DS/Wii U. (Tomodachi Life compatibility planned at secondary priority).
+Mii2QR: A program that will take a Mii Character from the .sav file and convert it into a Mii QR Code for 3DS/Wii U. It will also contain Tomodachi Life specific data, including Personality, Catchphrase, Full Name, DOB, Blood Type (Researching), and in the future, potentially Voice Data. 
 
 THANK YOU FOR LITERALLY DOING 66% OF THE QR CONVERTER WORK AHEAD OF TIME [@ariankordi](https://github.com/ariankordi).
 
